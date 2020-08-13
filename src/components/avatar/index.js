@@ -6,10 +6,8 @@ import "./style.css";
 
 const Avatar = () => {
     return (
-            <Container fixed="bottom">
                 <Image src={Hero} />
-            </Container>
-    )
-}
+    );
+};
 
 export default Avatar;

@@ -1,18 +1,28 @@
 import React from "react";
+import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Avatar from "./components/avatar";
+import JobCard from "./components/card";
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <Row className="justify-content-md-left">
-        <Col xs={12} sm={4} md={4}>
-          <Avatar />
-      </Col>
-      </Row>
-    </div >
+      <Container fluid>
+        <Row>
+          <Col md={6}>
+            <Avatar />
+          </Col>
+          <Col md={3}>
+            <JobCard />
+          </Col>
+          <Row>
+            <Col md={3}>
+              <JobCard />
+            </Col>
+          </Row>
+        </Row>
+      </Container>
   );
 }
 
