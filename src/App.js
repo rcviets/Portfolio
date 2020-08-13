@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Avatar from "./components/avatar";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Row className="justify-content-md-left">
+        <Col xs={12} sm={4} md={4}>
+          <Avatar />
+      </Col>
+      </Row>
+    </div >
   );
 }
 
