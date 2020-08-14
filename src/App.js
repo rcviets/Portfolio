@@ -8,10 +8,10 @@ function App() {
   return (
     <Container>
       <Row>
-        <Col md={6}>
+        <Col className="png-avatar" md={4}>
           <Avatar />
         </Col>
-        <Col md={6}>
+        <Col md={8}>
           <CardContainer/>
         </Col>
       </Row>

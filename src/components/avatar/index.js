@@ -6,7 +6,7 @@ import "./style.css";
 
 const Avatar = () => {
     return (
-                <Image src={Hero} />
+                <Image className="avatar-her" src={Hero} />
     );
 };
 
